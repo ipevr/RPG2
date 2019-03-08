@@ -6,16 +6,28 @@ using UnityEngine.AI;
 
 public class Mover : MonoBehaviour {
 
+    const string FORWARD_SPEED = "ForwardSpeed";
+
     NavMeshAgent agent = null;
+    Animator myAnimator = null;
 
     void Start() {
         agent = GetComponent<NavMeshAgent>();
+        myAnimator = GetComponent<Animator>();
     }
 
     void Update() {
         if (Input.GetMouseButtonDown(0)) {
             MoveToCursor();
         }
+        UpdateAnimator();
+    }
+
+    void UpdateAnimator() {
+        Vector3 velocity = agent.velocity;
+        Vector3 localVelocity = transform.InverseTransformDirection(velocity);
+        float currentSpeed = localVelocity.z;
+        myAnimator.SetFloat(FORWARD_SPEED, currentSpeed);
     }
 
     void MoveToCursor() {
