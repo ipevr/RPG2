@@ -44,7 +44,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 1
+  m_GIWorkflowMode: 0
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -260,7 +260,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 413494, guid: c2849fd453abd0445a702a035f04ac60, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 23.49
+      value: 24.62
       objectReference: {fileID: 0}
     - target: {fileID: 413494, guid: c2849fd453abd0445a702a035f04ac60, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2903,15 +2903,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 4597725543712294905, guid: 7901ce47b5294bb41a41796e4347e788,
-        type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 7390803826034389365, guid: 7901ce47b5294bb41a41796e4347e788,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 26.48
+      value: 28.04
       objectReference: {fileID: 0}
     - target: {fileID: 7390803826034389365, guid: 7901ce47b5294bb41a41796e4347e788,
         type: 3}
@@ -2921,7 +2916,7 @@ PrefabInstance:
     - target: {fileID: 7390803826034389365, guid: 7901ce47b5294bb41a41796e4347e788,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.43
+      value: -0.55
       objectReference: {fileID: 0}
     - target: {fileID: 7390803826034389365, guid: 7901ce47b5294bb41a41796e4347e788,
         type: 3}
@@ -2962,6 +2957,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4597725543712294905, guid: 7901ce47b5294bb41a41796e4347e788,
+        type: 3}
+      propertyPath: target
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2611795259376047587, guid: 7901ce47b5294bb41a41796e4347e788,
         type: 3}
