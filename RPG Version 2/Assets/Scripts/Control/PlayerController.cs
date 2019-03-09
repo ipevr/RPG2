@@ -40,7 +40,7 @@ namespace RPG.Control {
             Ray ray = GetMouseRay();
             if (Physics.Raycast(ray, out hit)) {
                 if (Input.GetMouseButton(0)) {
-                    playerMover.MoveTo(hit.point);
+                    playerMover.StartMoveAction(hit.point);
                 }
                 return true;
             }
